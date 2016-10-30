@@ -39,48 +39,107 @@ function loadPoints(points,texture) {
     //load the vertex positions and texture positions here
 
     //x from -6 to 6
-    //z from 0 to 10   
-    points.push(vec4(-6.0, 0 , 10, 1));
-    texture.push(vec2(0,0.5));
+    //z from 0 to 10  
 
+
+    //right wall
+    points.push(vec4(6.0 , 0 , 10, 1));
+    texture.push(vec2(0, 0));
+    points.push(vec4(6.0 , 6 , 0, 1));
+    texture.push(vec2(0, .5));
+    points.push(vec4(6.0 , 0 , 0, 1));
+    texture.push(vec2(.5, 0));
+
+    points.push(vec4(6.0, 0 , 10, 1));
+    texture.push(vec2(0, 0));
+    points.push(vec4(6.0 , 6 , 0, 1));
+    texture.push(vec2(0, .5));
+    points.push(vec4(6.0 , 6 , 10, 1));
+    texture.push(vec2(.5, .5));
+
+
+
+    //left wall
+    points.push(vec4(-6.0 , 0 , 10, 1));
+    texture.push(vec2(0, 0));
+    points.push(vec4(-6.0 , 6 , 0, 1));
+    texture.push(vec2(0, .5));
+    points.push(vec4(-6.0 , 0 , 0, 1));
+    texture.push(vec2(.5, 0));
+
+    points.push(vec4(-6.0, 0 , 10, 1));
+    texture.push(vec2(0, 0));
+    points.push(vec4(-6.0 , 6 , 0, 1));
+    texture.push(vec2(0, .5));
+    points.push(vec4(-6.0 , 6 , 10, 1));
+    texture.push(vec2(.5, .5));
+ 
+    //floor
+    points.push(vec4(-6.0, 0 , 10, 1));
+    texture.push(vec2(0,.5));
     points.push(vec4(-6.0 , 0 , 0, 1));
     texture.push(vec2(0, 1));
-
     points.push(vec4(6.0 , 0 , 0, 1));
-    texture.push(vec2(.5,1));
+    texture.push(vec2(.5, 1));
 
     points.push(vec4(-6.0, 0 , 10, 1));
+    texture.push(vec2(0, .5));
+    points.push(vec4(6.0 , 0 , 10, 1));
+    texture.push(vec2(.5, .5));
+    points.push(vec4(6.0 , 0 , 0, 1));
     texture.push(vec2(.5,1));
 
+     //mona lisa
+    points.push(vec4(-2.0, 1 , 0, 1));
+    texture.push(vec2(.5, .5));
+    points.push(vec4(-2.0 , 5 , 0, 1));
+    texture.push(vec2(.5, 1));
+    points.push(vec4(2.0 , 1 , 0, 1));
+    texture.push(vec2(1, .5));
+
+    points.push(vec4(-2.0, 5 , 0, 1));
+    texture.push(vec2(.5, 1));
+    points.push(vec4(2.0 , 1 , 0, 1));
+    texture.push(vec2(1, .5));
+    points.push(vec4(2.0 , 5 , 0, 1));
+    texture.push(vec2(1, 1));   
+
+    //starry night
+    points.push(vec4(-6.0 , 5 , 2, 1));
+    texture.push(vec2(0.5, 0));
+    points.push(vec4(-6.0 , 2 , 5, 1));
+    texture.push(vec2(.5, .5));
+    points.push(vec4(-6.0 , 5 , 5, 1));
+    texture.push(vec2(1, 0));
+
+    points.push(vec4(-6.0, 5, 2, 1));
+    texture.push(vec2(0.5, 0));
+    points.push(vec4(-6.0 , 2 , 5, 1));
+    texture.push(vec2(.5, .5));
+    points.push(vec4(-6.0 , 2 , 2, 1));
+    texture.push(vec2(1, .5));
+
+
+    //back wall
+    points.push(vec4(-6.0, 0 , 0, 1));
+    texture.push(vec2(0, 0));
+    points.push(vec4(-6.0 , 6 , 0, 1));
+    texture.push(vec2(0, .5));
     points.push(vec4(6.0 , 0 , 0, 1));
-    texture.push(vec2(0, 1));
+    texture.push(vec2(.5, 0));
 
-    points.push(vec4(6.0 , 0 , 10, 1));
-    texture.push(vec2(0,.5));
+    points.push(vec4(-6.0, 6 , 0, 1));
+    texture.push(vec2(0, .5));
+    points.push(vec4(6.0 , 0 , 0, 1));
+    texture.push(vec2(.5, 0));
+    points.push(vec4(6.0 , 6 , 0, 1));
+    texture.push(vec2(.5, .5));
 
 
 
+   
 
-
-
-    points.push(vec4(-3.0, 0 , 5, 1));
-    texture.push(vec2(.5,0.5));
-
-    points.push(vec4(-3.0 , 0 , 0, 1));
-    texture.push(vec2(.5, 1));
-
-    points.push(vec4(3.0 , 0 , 0, 1));
-    texture.push(vec2(1,1));
-
-    points.push(vec4(-3.0, 0 , 5, 1));
-    texture.push(vec2(1,1));
-
-    points.push(vec4(3.0 , 0 , 0, 1));
-    texture.push(vec2(.5, 1));
-
-    points.push(vec4(3.0 , 0 , 5, 1));
-    texture.push(vec2(.5,.5));
-
+   
 
 
 }
