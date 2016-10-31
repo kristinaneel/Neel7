@@ -90,34 +90,34 @@ function loadPoints(points,texture) {
     texture.push(vec2(.5,1));
 
      //mona lisa
-    points.push(vec4(-2.0, 1 , 0, 1));
+    points.push(vec4(-2.0, 1 , 0.2, 1));
     texture.push(vec2(.5, .5));
-    points.push(vec4(-2.0 , 5 , 0, 1));
+    points.push(vec4(-2.0 , 5 , 0.2, 1));
     texture.push(vec2(.5, 1));
-    points.push(vec4(2.0 , 1 , 0, 1));
+    points.push(vec4(2.0 , 1 , 0.2, 1));
     texture.push(vec2(1, .5));
 
-    points.push(vec4(-2.0, 5 , 0, 1));
+    points.push(vec4(-2.0, 5 , 0.2, 1));
     texture.push(vec2(.5, 1));
-    points.push(vec4(2.0 , 1 , 0, 1));
+    points.push(vec4(2.0 , 1 , 0.2, 1));
     texture.push(vec2(1, .5));
-    points.push(vec4(2.0 , 5 , 0, 1));
+    points.push(vec4(2.0 , 5 , 0.2, 1));
     texture.push(vec2(1, 1));   
 
     //starry night
-    points.push(vec4(-6.0 , 5 , 2, 1));
+    points.push(vec4(-5.8 , 5 , 3, 1));
+    texture.push(vec2(1, 0.5));
+    points.push(vec4(-5.8 , 2 , 8, 1));
     texture.push(vec2(0.5, 0));
-    points.push(vec4(-6.0 , 2 , 5, 1));
-    texture.push(vec2(.5, .5));
-    points.push(vec4(-6.0 , 5 , 5, 1));
-    texture.push(vec2(1, 0));
+    points.push(vec4(-5.8 , 5 , 8, 1));
+    texture.push(vec2(0.5, 0.5));
 
-    points.push(vec4(-6.0, 5, 2, 1));
-    texture.push(vec2(0.5, 0));
-    points.push(vec4(-6.0 , 2 , 5, 1));
-    texture.push(vec2(.5, .5));
-    points.push(vec4(-6.0 , 2 , 2, 1));
-    texture.push(vec2(1, .5));
+    points.push(vec4(-5.8, 5, 3, 1));
+    texture.push(vec2(1, 0.5));
+    points.push(vec4(-5.8 , 2 , 8, 1));
+    texture.push(vec2(.5, 0));
+    points.push(vec4(-5.8 , 2 , 3, 1));
+    texture.push(vec2(1, 0));
 
 
     //back wall
@@ -230,7 +230,6 @@ onload = function init()  {
                 gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
              break;
         }
-        init();
     };
 
     render();
